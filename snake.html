@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake game</title>
+    <link rel="stylesheet" href="snake.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="score_details">
+            <i class="fa fa-gear setting_btn" ></i>
+            <div class="setting_main_box display_none">
+
+
+                <div class="settin_box">
+                    <label for="default"> set default</label>
+                    <input type="checkbox" id="default">
+                </div>
+                <div class="settin_box">
+                    <label for="details_color"> detaisl color</label>
+                    <input type="color" id="details_color">
+                </div>
+                <div class="settin_box">
+                    <label for="bord_color"> bord color</label>
+                    <input type="color" id="bord_color">
+                </div>
+                <div class="settin_box">
+                    <label for="snake_color"> snake color</label>
+                    <input type="color" id="snake_color">
+                </div>
+                <div class="settin_box">
+                    <label for="food_color"> food color</label>
+                    <input type="color" id="food_color">
+                </div>
+                <div class="settin_box">
+                  
+                    <select id="speed">
+                        <option value="125"> select speed</option>
+                        <option value="200">low</option>
+                        <option value="125">normal</option>
+                        <option value="50">high</option>
+                    </select>
+                </div>
+                <div class="settin_box">
+                    <button class="save_btn">save changes</button>
+                </div>
+
+
+            </div>
+            <span class="score">Score is :0</span>
+            <span class="high_score">High Score is :30</span>
+        </div>
+        <div class="game_bord">
+
+        </div>
+        <div class="control">
+            <i class="fa-solid fa-arrow-left-long"></i>
+            <i class="fa-solid fa-arrow-up-long"></i>
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <i class="fa-solid fa-arrow-down-long"></i>
+        </div>
+
+    </div>
+
+
+
+    <script src="snake.js"></script>
+</body>
+
+</html>
